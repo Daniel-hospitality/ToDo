@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import Calendar from 'react-calendar';
-import "react-calendar/dist/Calendar.css";
+import React from 'react';
+import './App.css';
+
+import MyCalendar from './Components/Calander';
+import ToDo from './Components/ToDo'
 
 
-class App extends Component {
-  state = {
-    date: new Date(),
-  }
+function App() {
 
-  onChange = date => this.setState({ date })
+return (
+  <div>
+    <MyCalendar />
+    <ToDo />
+  </div>
+);
 
-  render() {
-    return (
-      <div>
-        <Calendar
-          onChange={this.onChange}
-          value={this.state.date}
-        />
-      </div>
-    );
-  }
 }
+
+
+
 
 export default App;
