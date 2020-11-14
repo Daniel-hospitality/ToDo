@@ -3,6 +3,8 @@ import './App.css';
 
 import MyCalendar from './Components/Calander';
 import ToDo from './Components/ToDo'
+import Klick from './Components/Klick'
+import Testapi from './Components/Testapi'
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
 return (
   <div>
     <MyCalendar />
+    <Klick />
     <ToDo />
+    <Testapi />
   </div>
 );
 

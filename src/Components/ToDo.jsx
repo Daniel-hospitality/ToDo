@@ -24,10 +24,10 @@ export default class ToDo extends Component {
 
   render() {
     return (
-      <div>
+      <div className="MainApp">
         <form className="App" onSubmit={this.onSubmit}>
           <input value={this.state.term} onChange={this.onChange} />
-          <button>Submit</button>
+          <button>ToDo</button>
         </form>
         <List items={this.state.items} />
       </div>
