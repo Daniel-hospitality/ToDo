@@ -1,33 +1,33 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import MyCalendar from './Components/Calander';
-import ToDo from './Components/ToDo'
-import Klick from './Components/Klick'
-import Testapi from './Components/Testapi'
+import MyCalendar from "./Components/Calander";
+import ToDo from "./Components/ToDo";
+import Klick from "./Components/Klick";
+import Testapi from "./Components/Testapi";
+import ToDoList from "./Components/ToDoList";
 // import NLHoliday from './Components/Holiday'
 
 function App() {
+  return (
+    <div >
+      <h1>ToDo List</h1>
 
-return (
-  <div className="TestTodo">
-    <h1>Test ToDO Daniel</h1>
+      <div className="TestTodo">
+        {/* <p>Calendar begin</p> */}
+        <MyCalendar />
+        <ToDoList />
 
-    <p>Calendar begin</p>
-    <MyCalendar />
-    {/* <NLHoliday /> */}
-    <p>+ of - en Hide</p>
-    <Klick />
-    <p>ToDo Start</p>
-    <ToDo />
-    <p>gif search test</p>
-    <Testapi />
-  </div>
-);
-
+        {/* <NLHoliday /> */}
+        {/* <p>+ of - en Hide</p> */}
+        {/* <Klick /> */}
+        {/* <p>ToDo Start</p> */}
+        {/* <ToDo /> */}
+        {/* <p>gif search test</p> */}
+        {/* <Testapi /> */}
+      </div>
+    </div>
+  );
 }
-
-
-
 
 export default App;

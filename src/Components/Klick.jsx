@@ -21,7 +21,7 @@ class Klick extends Component {
 
   render() {
     return (
-      <div>
+      <div className="MainApp">
         <button onClick={this.IncrementItem}>Click to increment by 1</button>
         <button onClick={this.DecreaseItem}>Click to decrease by 1</button>
         <button onClick={this.ToggleClick}>
