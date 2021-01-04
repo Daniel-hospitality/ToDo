@@ -1,12 +1,12 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import  './App.css';
 
-import MyCalendar from "./Components/Calander";
-import ToDo from "./Components/ToDo";
-import Klick from "./Components/Klick";
-import Testapi from "./Components/Testapi";
-import ToDoList from "./Components/ToDoList";
-// import NLHoliday from './Components/Holiday'
+import MyCalendar from './Components/Calander';
+// import MyApp from './Components/Calander2';
+// import ToDo from "./Components/ToDo";
+// import Klick from "./Components/Klick";
+// import Testapi from "./Components/Testapi";
+import ToDoList from './Components/ToDoList';
 
 function App() {
   return (
@@ -14,20 +14,18 @@ function App() {
       <h1>ToDo List</h1>
 
       <div className="TestTodo">
-        {/* <p>Calendar begin</p> */}
-        <MyCalendar />
+        <MyCalendar 
+        tileClassname = {(
+        ({ date}) => date.getDay() === 3 ? 'wednesday' : null )}/>
         <ToDoList />
+        
 
-        {/* <NLHoliday /> */}
-        {/* <p>+ of - en Hide</p> */}
-        {/* <Klick /> */}
-        {/* <p>ToDo Start</p> */}
-        {/* <ToDo /> */}
-        {/* <p>gif search test</p> */}
-        {/* <Testapi /> */}
+       
       </div>
     </div>
   );
 }
+
+
 
 export default App;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import "react-calendar/dist/Calendar.css";
+import 'react-calendar/dist/Calendar.css';
+import HolidayLijst from './Holiday';
 
 
 
@@ -11,15 +12,21 @@ const MyCalendar = () => {
     setDate(date);
   };
 
+  
+
   return (
     <div className="MainApp">
-      <Calendar showWeekNumbers  onChange={onChange} value={date} />
+      <Calendar showWeekNumbers  onChange={onChange} value={date}/>
       {console.log(date)}
       {date.toString()}
+      <HolidayLijst />
+
     </div>
   );
 
 };
+
+
 
 // console.log(JSON.stringify(Holiday)); 
 export default MyCalendar;

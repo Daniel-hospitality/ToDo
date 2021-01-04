@@ -30,6 +30,10 @@ ul li::marker {
   font-size: 1.5em;
 }
 
+.vacation {
+  background-color: lightgreen;
+}
+
 
 
 

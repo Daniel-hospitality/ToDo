@@ -1,6 +1,6 @@
-import React from "react";
-import ToDoForm from "./ToDoForm";
-import ToDo1 from "./ToDo1";
+import React from 'react';
+import ToDoForm from './ToDoForm';
+import ToDo1 from './ToDo1';
 // import ToDoForm from "./ToDoForm"
 
 /* Todo
@@ -22,6 +22,7 @@ export default class ToDoList extends React.Component {
     todos: [],
     todoToShow: "all",
     toggleAllComplete: true
+    
   };
 
   addTodo = todo => {
@@ -125,7 +126,7 @@ export default class ToDoList extends React.Component {
             }
           >toggle all complete: {`${this.state.toggleAllComplete}`}
           </button>  
-           
+          
            
         </div>
       </div>
